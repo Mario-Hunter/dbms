@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="442.0" prefWidth="641.0" stylesheets="@resources/bootstrap3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eg.edu.alexu.csd.oop.draw.cs49.presenters.PaintPresenter">
+
+    <children>
+        <AnchorPane layoutY="25.0" prefHeight="78.0" prefWidth="598.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+
+                <fx:include fx:id="toolbar" source="resources/properties_menu.fxml" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="866.0" layoutY="119.0" prefHeight="329.0" prefWidth="200.0">
+            <children>
+                <fx:include fx:id="layers" source="resources/layers_menu.fxml" />
+            </children>
+        </AnchorPane>
+        <GridPane fx:id="buttonPane" layoutY="116.0" prefHeight="97.0" prefWidth="40.0" stylesheets="@resources/paintStyle.css" AnchorPane.bottomAnchor="229.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="116.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+
+        </GridPane>
+        <GridPane fx:id="controlPane" layoutX="40.0" layoutY="119.0" prefHeight="97.0" prefWidth="22.0" stylesheets="@resources/paintStyle.css">
+            <children>
+                <Button fx:id="undoControl" mnemonicParsing="false" onAction="#onControlClicked" onMouseClicked="#onControlClicked" prefHeight="36.0" prefWidth="57.0" styleClass="Undo" GridPane.rowIndex="1" />
+                <Button fx:id="redoControl" mnemonicParsing="false" onAction="#onControlClicked" onMouseClicked="#onControlClicked" prefHeight="33.0" prefWidth="54.0" styleClass="Redo" GridPane.rowIndex="2" />
+                <Button fx:id="moveAction" mnemonicParsing="false" onAction="#onActionClicked" prefHeight="32.0" prefWidth="43.0">
+                    <styleClass>
+                        <String fx:value="Move" />
+                        <String fx:value="btn" />
+                    </styleClass>
+                </Button>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="loadClass" mnemonicParsing="false" onAction="#onMenuItemClicked" text="Load Shape from Jar">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="saveFile" mnemonicParsing="false" onAction="#onMenuItemClicked" text="Save">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="loadFile" mnemonicParsing="false" onAction="#onMenuItemClicked" text="Load a file ">
+                            <accelerator>
+                                <KeyCodeCombination alt="DOWN" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Canvas fx:id="canvas_id" height="311.0" layoutX="70.0" layoutY="119.0" styleClass="canvas" width="781.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="119.0" />
+
+
+    </children>
+</AnchorPane>

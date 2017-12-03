@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><db:table xmlns:db="http://db">
+    <db:row>
+        <db:oop>50</db:oop>
+        <db:maths>sd</db:maths>
+        <db:grade>20</db:grade>
+    </db:row>
+</db:table>

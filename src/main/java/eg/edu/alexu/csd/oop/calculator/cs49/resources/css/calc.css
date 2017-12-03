@@ -1,0 +1,37 @@
+
+
+.button{
+    -fx-background-color: #2fd179;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-font-family: Sans-Serif;
+    -fx-font-size: 27;
+    border:0;
+    color:#fff;
+}
+
+.btn-cntrl{
+    -fx-background-color: rgb(150, 60, 54);
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+
+
+}
+
+.button:hover{
+    -fx-text-fill: whitesmoke;
+}
+
+
+.label{
+    -fx-background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+

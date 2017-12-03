@@ -1,0 +1,9 @@
+<!DOCTYPE TABLE[
+<!ELEMENT ROW (oop, maths, grade,)>
+<!ELEMENT oop (#CDATA)>
+<!ELEMENT maths (#CDATA)>
+<!ELEMENT grade (#CDATA)>
+<!ATTLIST oop type CDATA #FIXED INT>
+<!ATTLIST maths type CDATA #FIXED varChar>
+<!ATTLIST grade type CDATA #FIXED INT>
+]>

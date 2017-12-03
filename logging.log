@@ -1,0 +1,24 @@
+2017-12-03 05:32:08 INFO  StatementImpl:84 - executing batch
+2017-12-03 06:10:43 INFO  NamedThreads:193 - jcabi-aspects 0.22.6/3f0a1f7 started new daemon thread jcabi-loggable for watching of @Loggable annotated methods
+2017-12-03 06:10:43 INFO  DriverImpl:193 - #connect('jdbc:mysql:students', {path=D:\Faculty\CS-2\Fall\OOP\jdbc_maven\databases\student}): eg.edu.alexu.csd.oop.jdbc.cs49.connections.ConnectionImpl@1c2c22f3 in 31.14ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('CREATE DATABASE sample'): in 84.44µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('CREATE TABLE table_1 (column_1 INT,column_2 varChar)'): in 25.66µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('INSERT into table_1 (column_1,column_2) values(5,'foo')'): in 27.53µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('INSERT into table_1 (column_1,column_2) values(50,'bar')'): in 29.39µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('SELECT * FROM table_1'): in 21.46µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('UPDATE table_1 set column_1 = 10,column_2 = 'foobar' where column_1 < 5'): in 33.59µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #addBatch('SELECT * FROM table_1'): in 25.19µs
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('CREATE DATABASE sample'): false in 17.15ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('CREATE TABLE table_1 (column_1 INT,column_2 varChar)'): false in 104.65ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('INSERT into table_1 (column_1,column_2) values(5,'foo')'): false in 19.75ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('INSERT into table_1 (column_1,column_2) values(50,'bar')'): false in 6.24ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('SELECT * FROM table_1'): true in 27.27ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('UPDATE table_1 set column_1 = 10,column_2 = 'foobar' where column_1 < 5'): false in 12.08ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #execute('SELECT * FROM table_1'): true in 5.87ms
+2017-12-03 06:10:43 INFO  log4j:193 - #executeBatch(): [2, 0, 0, 0, 0, 0, 0] in 216.71ms
+2017-12-03 06:10:43 INFO  StatementImpl:193 - #close(): in 39.19µs
+2017-12-03 06:21:30 INFO  NamedThreads:193 - jcabi-aspects 0.22.6/3f0a1f7 started new daemon thread jcabi-loggable for watching of @Loggable annotated methods
+2017-12-03 06:21:30 INFO  DriverImpl:193 - #connect('jdbc:mysql:students', {path=D:\Faculty\CS-2\Fall\OOP\jdbc_maven\databases}): eg.edu.alexu.csd.oop.jdbc.cs49.connections.ConnectionImpl@77468bd9 in 10.64ms
+2017-12-03 06:22:52 INFO  StatementImpl:193 - #execute('create database students'): false in 18.18ms
+2017-12-03 06:43:40 INFO  NamedThreads:193 - jcabi-aspects 0.22.6/3f0a1f7 started new daemon thread jcabi-loggable for watching of @Loggable annotated methods
+2017-12-03 06:43:40 INFO  DriverImpl:193 - #connect('jdbc:mysql:students', {path=D:\Faculty\CS-2\Fall\OOP\jdbc_maven\databases}): eg.edu.alexu.csd.oop.jdbc.cs49.connections.ConnectionImpl@77468bd9 in 11.65ms
